@@ -1,6 +1,6 @@
 {% set name = "molsystem" %}
-{% set version = "2021.5.5" %}
-{% set sha256 = "0ecb5cedf29090258c19960f92486d1a9afe24ea27772f13e1ebc4e2be2f869f" %}
+{% set version = "2021.7.18" %}
+{% set sha256 = "5268f5f40a289408b44eb7d8ff53caf4c9f717c74d95b05ecad08c479365fac5" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  
+
 build:
   number: 0
   noarch: python
@@ -39,7 +39,7 @@ test:
 
 about:
   home: https://github.com/molssi-seamm/molsystem
-  summary: 'A Python package for handling molecular and periodic systems.'
+  summary: A Python package for handling molecular and periodic systems.
   license: LGPL-3.0-or-later
   license_file: LICENSE
   doc_url: https://molssi-seamm.github.io/molsystem/
