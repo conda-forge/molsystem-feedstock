@@ -36,6 +36,7 @@ test:
   requires:
     - openbabel
     - pip
+    - rdkit
 
 about:
   home: https://github.com/molssi-seamm/molsystem
