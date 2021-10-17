@@ -11,14 +11,14 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
     - setuptools
   run:
     - numpy
@@ -26,7 +26,8 @@ requirements:
     - pandas
     - pathvalidate
     - pycifrw
-    - python >=3.7
+    - python >=3.8
+    - rdkit
 
 test:
   imports:
@@ -34,9 +35,7 @@ test:
   commands:
     - pip check
   requires:
-    - openbabel
     - pip
-    - rdkit
 
 about:
   home: https://github.com/molssi-seamm/molsystem
