@@ -1,6 +1,6 @@
 {% set name = "molsystem" %}
-{% set version = "2021.10.15" %}
-{% set sha256 = "df3473297618a59452bf345b0fd8bc20a7d05cb3aa3a2a55d6dc6349e32cae1a" %}
+{% set version = "2021.10.24" %}
+{% set sha256 = "948cb2df53f76415daae96cfac9d7a9e07ef3b0985dcf8ae82ece1b060f698ed" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
