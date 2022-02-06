@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -28,6 +28,7 @@ requirements:
     - pycifrw
     - python >=3.8
     - rdkit
+    - https://conda.anaconda.org/conda-forge/linux-64/boost-cpp-1.74.0-h359cf19_5.tar.bz2  # [linux]
 
 test:
   imports:
