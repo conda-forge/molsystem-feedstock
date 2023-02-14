@@ -1,6 +1,6 @@
 {% set name = "molsystem" %}
-{% set version = "2022.11.3" %}
-{% set sha256 = "273b77378de8f7a7422048ff397ff1d57ac6300bd97e98d677e5ccbe10c4c61a" %}
+{% set version = "2023.2.13" %}
+{% set sha256 = "bae8ea7a0f802900ffad97bad4e0534b6b9e0f0bcd9ef6d1bb436c24463939c2" %}
 
 package:
   name: {{ name|lower }}
@@ -28,6 +28,7 @@ requirements:
     - pycifrw
     - python >=3.8
     - rdkit
+    - seamm-util
     - seekpath
     - spglib
 
