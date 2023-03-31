@@ -1,11 +1,11 @@
-About molsystem
-===============
+About molsystem-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/molsystem-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/molssi-seamm/molsystem
 
 Package license: LGPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/molsystem-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Python package for handling molecular and periodic systems.
 
