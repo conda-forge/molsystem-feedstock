@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -25,6 +25,7 @@ requirements:
     - openbabel
     - pandas
     - pathvalidate
+    - pubchempy
     - pycifrw
     - python >=3.8
     - rdkit
