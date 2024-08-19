@@ -1,6 +1,6 @@
 {% set name = "molsystem" %}
-{% set version = "2024.6.21" %}
-{% set sha256 = "234cf8790575aedcdab77d3358caea64fcf97754bd369291d4f3562fd7daf61c" %}
+{% set version = "2024.8.17" %}
+{% set sha256 = "b6b62eeb6ab7e2dd8c3047e3f391fabbe433974d1770e93a108c403a3a94b0c3" %}
 
 package:
   name: {{ name|lower }}
@@ -26,7 +26,6 @@ requirements:
     - pandas
     - pathvalidate
     - ply
-    - pubchempy
     - pycifrw
     - python >=3.8
     - rdkit
