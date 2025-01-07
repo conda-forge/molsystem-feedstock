@@ -1,6 +1,5 @@
 {% set name = "molsystem" %}
 {% set version = "2024.12.22" %}
-{% set sha256 = "cf9968bb4e55f195e3e4328b4a086c00557b0a70b83a0c7d58be34436b7a68d1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/molsystem/molsystem-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: cf9968bb4e55f195e3e4328b4a086c00557b0a70b83a0c7d58be34436b7a68d1
 
 build:
   number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
