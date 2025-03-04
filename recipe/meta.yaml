@@ -1,6 +1,6 @@
 {% set name = "molsystem" %}
-{% set version = "2025.2.23" %}
-{% set sha256 = "3e6bbbc201f9b2207d00f2bce6eb842fb6e4274945cf24ad5a4aa48d46cc7e80" %}
+{% set version = "2025.3.4" %}
+{% set sha256 = "2451899ad47c970e368020153cd3b9f118f54681f6ce63f5bf91b5701527485f" %}
 
 package:
   name: {{ name|lower }}
