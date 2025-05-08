@@ -1,7 +1,6 @@
 {% set name = "molsystem" %}
-{% set version = "2025.4.1" %}
-{% set sha256 = "0395845d4a42e0b5e80aada40f16566b77b006e06f3b0888e3eb2ba4dbcd89ad" %}
-
+{% set version = "2025.5.8" %}
+{% set sha256 = "5fbd296c7456260616b083b5fd3f9e26e4afd7201645e522c4747a733a6f5c16" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -13,12 +12,12 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
   run:
     - numpy
@@ -27,7 +26,7 @@ requirements:
     - pathvalidate
     - ply
     - pycifrw
-    - python >=3.8
+    - python >={{ python_min }}
     - rdkit
     - seamm-util
     - seekpath
@@ -40,6 +39,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/molssi-seamm/molsystem
